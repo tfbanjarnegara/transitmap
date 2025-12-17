@@ -12,11 +12,52 @@
 </head>
 <body>
     <h1>Peta Jaringan Angkutan Umum Banjarnegara</h1>
-    <p>Klik gambar untuk melihat dalam ukuran penuh.</p>
     
     <a href="petatfb.pdf"><img src="petatfb.pdf" alt="Banjarnegara Transit Map"></a>
     
-    <br>
-    <a href="nama-file.pdf" class="btn" download>Download PDF Map</a>
+    <btn>
+    <a href="petatfb.pdf" class="btn" download>Download Peta PDF</a>
+    <style>
+    /* 1. Background of the whole page */
+    body { 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        text-align: center; 
+        padding: 40px 20px; 
+        background-color: #f0f4f8; /* Change this hex code for a different background */
+        color: #333; /* Color of the text */
+    }
+
+    /* 2. Styling the Map Image container */
+    img { 
+        max-width: 100%; 
+        height: auto; 
+        border-radius: 8px; /* Rounds the corners of your map */
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Soft shadow for a professional look */
+        margin-bottom: 30px;
+    }
+
+    /* The Main Button */
+    .btn { 
+        display: inline-block; 
+        padding: 15px 30px; 
+        /* Your specific RGB color */
+        background-color: rgb(5, 150, 177); 
+        color: white; 
+        text-decoration: none; 
+        font-weight: bold;
+        border-radius: 50px; 
+        transition: all 0.3s ease; /* Smooth transition for color and shadow */
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    /* The Hover Effect (Slightly Darker) */
+    .btn:hover { 
+        /* A darker version of your RGB (approx 20% darker) */
+        background-color: rgb(4, 120, 142); 
+        box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        transform: translateY(-2px); /* Slight lift effect for that 'nerd' polish */
+    }
+</style>
+    
 </body>
 </html>
