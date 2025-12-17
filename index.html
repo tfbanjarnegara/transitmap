@@ -113,15 +113,15 @@
     <div style="margin-top: 20px;">
         <a href="petatfb.pdf" class="btn" download>Download PDF Map</a>
     </div>
-
+    
     <div class="faq-section">
-        <h3 style="color: #475569; margin-bottom: 20px; text-align: center;">Tanya Jawab/<br><i>Frequently Asked Questions</i></h3>
+        <h3 style="color: #475569; margin-bottom: 20px;">Tanya Jawab/<br><i>Frequently Asked Questions</i></h3>
     
         <details>
             <summary>
-                <span class="summary-text">
+                <span class="summary-content">
                     <span>Bagaimana cara memberhentikan angkutan?</span>
-                    <i style="font-weight: normal; font-size: 0.8rem; color: #64748b;">How to stop the vehicle?</i>
+                    <i>How to stop the vehicle?</i>
                 </span>
             </summary>
             <div class="faq-content">
@@ -132,9 +132,9 @@
     
         <details>
             <summary>
-                <span class="summary-text">
+                <span class="summary-content">
                     <span>Metode pembayaran apa yang tersedia?</span>
-                    <i style="font-weight: normal; font-size: 0.8rem; color: #64748b;">What payment methods are available?</i>
+                    <i>What payment methods are available?</i>
                 </span>
             </summary>
             <div class="faq-content">
@@ -145,9 +145,9 @@
     
         <details>
             <summary>
-                <span class="summary-text">
+                <span class="summary-content">
                     <span>Apakah ada halte bus resmi?</span>
-                    <i style="font-weight: normal; font-size: 0.8rem; color: #64748b;">Are there official bus stops?</i>
+                    <i>Are there official bus stops?</i>
                 </span>
             </summary>
             <div class="faq-content">
@@ -158,9 +158,9 @@
     
         <details>
             <summary>
-                <span class="summary-text">
+                <span class="summary-content">
                     <span>Berapa tarif naik angkutan?</span>
-                    <i style="font-weight: normal; font-size: 0.8rem; color: #64748b;">How much do I need to pay?</i>
+                    <i>How much do I need to pay?</i>
                 </span>
             </summary>
             <div class="faq-content">
@@ -184,7 +184,6 @@
             border-radius: 8px; 
             margin-bottom: 10px; 
             overflow: hidden; 
-            transition: all 0.3s ease;
         }
     
         summary { 
@@ -193,30 +192,33 @@
             font-weight: bold; 
             font-size: 0.9rem; 
             color: #334155; 
-            display: flex; /* Menggunakan Flex untuk menyejajarkan teks */
-            align-items: flex-start;
+            display: list-item; /* Native arrow */
             outline: none;
         }
     
-        /* Menyesuaikan jarak antara panah bawaan dan teks */
         summary::marker {
             color: rgb(5, 150, 177);
         }
     
-        /* Pembungkus teks agar sejajar vertikal di sebelah kanan panah */
-        .summary-text {
-            display: flex;
+        /* This aligns the two lines of text to the right of the native arrow */
+        .summary-content {
+            display: inline-flex;
             flex-direction: column;
-            margin-left: 10px; /* Jarak antara panah dan teks */
+            vertical-align: top;
+            margin-left: 5px; 
             line-height: 1.4;
         }
     
-        summary:hover { 
-            background: #f8fafc; 
+        .summary-content i {
+            font-weight: normal;
+            font-size: 0.8rem;
+            color: #64748b;
         }
     
+        summary:hover { background: #f8fafc; }
+    
         .faq-content { 
-            padding: 15px 15px 15px 50px; /* Padding kiri disesuaikan agar sejajar dengan teks pertanyaan */
+            padding: 15px 15px 15px 45px; 
             border-top: 1px solid #e2e8f0; 
             font-size: 0.85rem; 
             line-height: 1.6; 
