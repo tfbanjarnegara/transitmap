@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peta Angkutan Umum Banjarnegara</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Consolidating your styles for a professional look */
         body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            font-family: 'Inter', sans-serif; 
             text-align: center; 
             padding: 40px 20px; 
             background-color: #f0f4f8; 
@@ -17,13 +17,8 @@
 
         h1 {
             font-size: 1.8rem;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 1rem;
-            color: #666;
-            margin-bottom: 30px;
+            margin-top: 50px; /* Increased top spacing to prevent crowding on mobile status bars */
+            margin-bottom: 40px; /* Increased bottom spacing to separate from the image preview */
         }
 
         /* Responsive Map Image */
@@ -50,50 +45,44 @@
             margin-top: 20px;
         }
         
-        /* Hover Effect: Slightly Darker Nerd Polish */
         .btn:hover { 
             background-color: rgb(4, 120, 142); 
             box-shadow: 0 6px 12px rgba(0,0,0,0.2);
             transform: translateY(-2px); 
         }
 
+        /* Upcoming Maps Section */
+        .upcoming-section {
+            margin-top: 60px;
+            padding: 30px 10px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 12px;
+        }
+        .upcoming-grid {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        .upcoming-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px dashed #cbd5e1;
+            color: #94a3b8;
+            font-size: 0.85rem;
+            min-width: 160px;
+        }
+
+        /* Footer Styles */
         footer {
-            margin-top: 50px;
+            margin-top: 60px;
             font-size: 0.85rem;
             color: #777;
+            line-height: 1.8;
         }
-    </style>
-</head>
-<body>
-    <h1>Peta Jaringan Angkutan Umum Banjarnegara</h1>
-    
-    <a href="petatfb.pdf">
-        <img src="petatfb-image.jpg" alt="Banjarnegara Transit Map">
-    </a>
-
-    <p style="margin-top: 40px; font-size: 0.8rem; color: #999;">
-        Tap the image above to view.
-    </p>
-    
-    <div style="margin-top: 20px;">
-        <a href="petatfb.pdf" class="btn" download>Download PDF Map</a>
-    </div>
-
-    <footer style="margin-top: 50px; color: #777; line-height: 1.8;">
-    
-    <div class="social-links" style="font-size: 0.9rem;">
-        <a href="mailto:transportforbna@gmail.com" class="footer-link">Email</a> 
-        <span class="divider">|</span>
-        
-        <a href="https://instagram.com/tfbanjarnegara" target="_blank" class="footer-link">Instagram</a> 
-        <span class="divider">|</span>
-        
-        <a href="https://linkedin.com/company/transportforbna" target="_blank" class="footer-link">Linkedin</a>
-    </div>
-
-    <style>
         .footer-link {
-            /* RGB(5, 150, 177) */
             color: rgb(5, 150, 177);
             text-decoration: none;
             font-weight: bold;
@@ -108,14 +97,45 @@
             user-select: none;
         }
     </style>
+</head>
+<body>
+    <h1>Peta Jaringan Angkutan Umum Banjarnegara</h1>
+    
+    <a href="petatfb.pdf">
+        <img src="petatfb-image.jpg" alt="Banjarnegara Transit Map">
+    </a>
 
-    <p style="font-size: 0.75rem; margin-bottom: 8px; color: #999;">
-        Developed by Transportasi Banjarnegara <br>
-        Common Attribution Copyright CC BY 4.0 <br>
-        2025
+    <p style="margin-top: 20px; font-size: 0.85rem; color: #666;">
+        Tap the image above to view map.
     </p>
-        
-</footer>
+    
+    <div style="margin-top: 20px;">
+        <a href="petatfb.pdf" class="btn" download>Download PDF Map</a>
+    </div>
+
+    <div class="upcoming-section">
+        <h3 style="font-size: 1rem; color: #475569; margin-bottom: 5px;">Coming Soon / Peta Mendatang</h3>
+        <div class="upcoming-grid">
+            <div class="upcoming-item">📍 Kabupaten Purbalingga</div>
+            <div class="upcoming-item">📍 Kabupaten Wonosobo</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-links" style="font-size: 0.9rem; margin-bottom: 20px;">
+            <a href="mailto:transportforbna@gmail.com" class="footer-link">Email</a> 
+            <span class="divider">|</span>
+            <a href="https://instagram.com/tfbanjarnegara" target="_blank" class="footer-link">Instagram</a> 
+            <span class="divider">|</span>
+            <a href="https://linkedin.com/company/transportforbna" target="_blank" class="footer-link">Linkedin</a>
+        </div>
+
+        <p style="font-size: 0.75rem; color: #999;">
+            Developed by Transportasi Banjarnegara <br>
+            Creative Commons Attribution Copyright CC BY SA 4.0 <br>
+            2025
+        </p>
+    </footer>
 
 </body>
 </html>
