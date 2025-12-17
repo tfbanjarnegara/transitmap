@@ -36,10 +36,9 @@
             margin: 0;
         }
 
-        /* Container must be 'relative' so logos can be 'absolute' inside it */
         .brand-header {
             display: flex;
-            position: relative; 
+            align-items: center; /* PERFECT CENTER: Blue logo vs Text Block */
             background: white;
             padding: 15px 20px;
             margin: 15px auto; 
@@ -49,65 +48,49 @@
             border: 1px solid #e2e8f0;
             box-shadow: 0 4px 6px rgba(0,0,0,0.02);
             box-sizing: border-box;
-            /* Added height to ensure absolute centering has a fixed reference */
-            min-height: 80px; 
         }
         
         .main-logo {
-            position: absolute;
-            top: 50%;
-            left: 20px; /* Matches padding-left of header */
-            transform: translateY(-50%); /* PERFECT CENTER: Moves logo up by half its own height */
-            height: clamp(48px, 12vw, 58px) !important;
-            width: clamp(48px, 12vw, 58px) !important;
+            height: clamp(48px, 12vw, 55px) !important;
+            width: clamp(48px, 12vw, 55px) !important;
             object-fit: contain;
             border-radius: 50%;
-            box-shadow: none !important;
+            flex-shrink: 0;
+            margin-right: 15px;
+            display: block;
         }
         
         .brand-text {
-            /* Offset the text to the right to make room for the absolute logo */
-            margin-left: clamp(60px, 15vw, 73px); 
             display: flex;
             flex-direction: column;
             text-align: left;
         }
         
         .org-name {
-            font-size: clamp(1.2rem, 4.5vw, 1.4rem);
+            font-size: clamp(1.1rem, 4vw, 1.4rem);
             font-weight: 500;
             color: #000;
             margin: 0;
-            line-height: 1.2;
+            line-height: 1.1;
         }
         
         .subsidiary-line {
-            font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+            font-size: clamp(0.75rem, 2.5vw, 0.9rem);
             color: #475569;
-            margin-top: 2px; 
-            position: relative; /* Anchor for the small red logo */
-            display: block;
+            margin-top: 4px;
+            display: flex;
+            align-items: center; /* PERFECT CENTER: Red logo vs Red text */
+            gap: 6px; /* This keeps the gap IDENTICAL on all screens */
             white-space: nowrap;
         }
         
-        /* Forcing the Red Logo into its own absolute position */
         .tfi-logo-small {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            /* You may need to adjust 'left' slightly based on the width of "Bagian dari " */
-            left: 78px; 
-            height: clamp(15px, 3.5vw, 17px) !important;
-            width: clamp(15px, 3.5vw, 17px) !important;
+            height: clamp(14px, 3.5vw, 16px) !important;
+            width: clamp(14px, 3.5vw, 16px) !important;
             border-radius: 50%;
-            box-shadow: none !important;
+            flex-shrink: 0;
+            display: block; /* Removes baseline bias */
         }
-        
-        /* Adding a spacer to prevent text from overlapping the absolute red logo */
-        .tfi-name-spacer {
-            margin-left: 24px; /* Space for the 17px logo + 7px gap */
-        }
-
         .tfi-name {
             font-weight: 400;
         }
@@ -284,13 +267,12 @@
 
     <header class="brand-header">
         <img src="tfb-logo.png" alt="TFB Logo" class="main-logo">
-        
         <div class="brand-text">
             <div class="org-name">Transportasi Banjarnegara</div>
             <div class="subsidiary-line">
                 <span>Bagian dari</span>
                 <img src="tfi-logo.png" alt="TFI Logo" class="tfi-logo-small">
-                <span class="tfi-name-spacer">Transport for Indonesia</span>
+                <span style="font-weight: 400;">Transport for Indonesia</span>
             </div>
         </div>
     </header>
