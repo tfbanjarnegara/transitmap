@@ -38,52 +38,57 @@
 
         /* Logo Header Styles */
         .brand-header {
-            padding: 20px 5%;
-            background: transparent;
-            text-align: left; /* Aligned left as per your request */
             display: flex;
-            align-items: center;
-            gap: 15px;
+            align-items: center; /* Vertically centers the main logo with the text block */
+            padding: 10px 15px; /* Reduced padding to move it more top-left */
+            background: transparent;
+            width: 100%;
+            box-sizing: border-box;
         }
-
+        
         .main-logo {
-            height: 65px;
-            width: 65px;
+            height: 60px !important;
+            width: 60px !important;
             object-fit: contain;
             border-radius: 50%;
-            background-color: transparent;
             flex-shrink: 0;
+            margin-right: 12px;
+            box-shadow: none !important; /* Removes global img shadow */
         }
-
+        
         .brand-text {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            text-align: left;
         }
-
+        
         .org-name {
-            font-size: 1.8rem;
+            font-size: 1.4rem; /* Adjusted for better mobile fit */
             font-weight: 700;
             color: #000;
             margin: 0;
             line-height: 1.1;
+            white-space: nowrap; /* Prevents text from stacking/breaking */
         }
-
+        
         .subsidiary-line {
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             color: #333;
-            margin-top: 5px;
+            margin-top: 3px;
             display: flex;
-            align-items: center;
-            gap: 8px;
+            align-items: center; /* Vertically centers TFI logo with its line of text */
+            gap: 5px;
+            white-space: nowrap; /* Prevents "Bagian dari" from breaking away */
         }
-
+        
         .tfi-logo-small {
-            height: 18px;
-            width: 18px;
+            height: 16px !important;
+            width: 16px !important;
             object-fit: contain;
             border-radius: 50%;
-            vertical-align: middle;
+            flex-shrink: 0;
+            box-shadow: none !important;
         }
 
         /* Page Content Spacing */
@@ -182,7 +187,7 @@
         <img src="tfb-logo.png" alt="TFB Logo" class="main-logo">
         
         <div class="brand-text">
-            <p class="org-name">Transportasi Banjarnegara</p>
+            <div class="org-name">Transportasi Banjarnegara</div>
             <div class="subsidiary-line">
                 <span>Bagian dari</span>
                 <img src="tfi-logo.png" alt="TFI Logo" class="tfi-logo-small">
