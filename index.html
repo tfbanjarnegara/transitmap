@@ -115,10 +115,15 @@
     </div>
 
     <div class="faq-section">
-        <h3 style="color: #475569; margin-bottom: 20px;">Tanya Jawab/<br><i>Frequently Asked Questions</i></h3>
+        <h3 style="color: #475569; margin-bottom: 20px; text-align: center;">Tanya Jawab/<br><i>Frequently Asked Questions</i></h3>
     
         <details>
-            <summary>Bagaimana cara memberhentikan angkutan?<br><i>How to stop the vehicle?</i></summary>
+            <summary>
+                <span class="summary-text">
+                    <span>Bagaimana cara memberhentikan angkutan?</span>
+                    <i style="font-weight: normal; font-size: 0.8rem; color: #64748b;">How to stop the vehicle?</i>
+                </span>
+            </summary>
             <div class="faq-content">
                 <p><strong>ID:</strong> Karena sistem naik-turun bebas, Anda bisa memberhentikan angkutan dengan melambaikan tangan di pinggir jalan dan memberi tahu pengemudi saat ingin turun.</p>
                 <p><strong>EN:</strong> <i>Since it is a stop-on-request system, you can hail it from the roadside or inform the driver when you want to alight</i>.</p>
@@ -126,7 +131,12 @@
         </details>
     
         <details>
-            <summary>Metode pembayaran apa yang tersedia?<br><i>What payment methods are available?</i></summary>
+            <summary>
+                <span class="summary-text">
+                    <span>Metode pembayaran apa yang tersedia?</span>
+                    <i style="font-weight: normal; font-size: 0.8rem; color: #64748b;">What payment methods are available?</i>
+                </span>
+            </summary>
             <div class="faq-content">
                 <p><strong>ID:</strong> Saat ini hanya menerima <b>tunai</b>. Belum tersedia pembayaran non-tunai (QRIS/Kartu).</p>
                 <p><strong>EN:</strong> <i>Currently, only <b>cash</b> is accepted. Electronic payments (QRIS/Cards) are not yet available</i>.</p>
@@ -134,21 +144,30 @@
         </details>
     
         <details>
-            <summary>Apakah ada halte bus resmi?<br><i>Are there official bus stops?</i></summary>
+            <summary>
+                <span class="summary-text">
+                    <span>Apakah ada halte bus resmi?</span>
+                    <i style="font-weight: normal; font-size: 0.8rem; color: #64748b;">Are there official bus stops?</i>
+                </span>
+            </summary>
             <div class="faq-content">
                 <p><strong>ID:</strong> Titik pada peta adalah rujukan lokasi berhenti, bukan halte fisik bertanda resmi.</p>
                 <p><strong>EN:</strong> <i>The points on the map are reference locations to stop, not official sheltered bus stops with signage</i>.</p>
             </div>
         </details>
-
+    
         <details>
-            <summary>Berapa tarif naik angkutan?<br><i>How much do I need to pay?</i></summary>
+            <summary>
+                <span class="summary-text">
+                    <span>Berapa tarif naik angkutan?</span>
+                    <i style="font-weight: normal; font-size: 0.8rem; color: #64748b;">How much do I need to pay?</i>
+                </span>
+            </summary>
             <div class="faq-content">
                 <p><strong>ID:</strong> Tarif tergantung dengan jarak tempuh. Tarif dimulai dari Rp4,000 untuk dewasa dan Rp3,000 untuk pelajar.</p>
                 <p><strong>EN:</strong> <i>Price depends on the distance traveled. It starts from Rp4,000 for adults and Rp3,000 for students</i>.</p>
             </div>
         </details>
-        
     </div>
     
     <style>
@@ -174,13 +193,22 @@
             font-weight: bold; 
             font-size: 0.9rem; 
             color: #334155; 
-            display: list-item; /* Return the initial arrow */
+            display: flex; /* Menggunakan Flex untuk menyejajarkan teks */
+            align-items: flex-start;
             outline: none;
         }
     
-        /* Drop down arrow */
+        /* Menyesuaikan jarak antara panah bawaan dan teks */
         summary::marker {
             color: rgb(5, 150, 177);
+        }
+    
+        /* Pembungkus teks agar sejajar vertikal di sebelah kanan panah */
+        .summary-text {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px; /* Jarak antara panah dan teks */
+            line-height: 1.4;
         }
     
         summary:hover { 
@@ -188,7 +216,7 @@
         }
     
         .faq-content { 
-            padding: 15px; 
+            padding: 15px 15px 15px 50px; /* Padding kiri disesuaikan agar sejajar dengan teks pertanyaan */
             border-top: 1px solid #e2e8f0; 
             font-size: 0.85rem; 
             line-height: 1.6; 
