@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7VWBQHQD9W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-7VWBQHQD9W');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peta Angkutan Umum Banjarnegara</title>
@@ -115,7 +124,7 @@
     </div>
     
     <div class="faq-section">
-        <h3 style="color: #475569; margin-bottom: 20px; text-align: center;">Tanya Jawab/<br><i>Frequently Asked Questions</i></h3>
+        <h3 style="color: #475569; margin-bottom: 20px; text-align: left;">Tanya Jawab<br><i>Frequently Asked Questions</i></h3>
     
         <details>
             <summary>
@@ -179,26 +188,26 @@
             border-radius: 8px; 
             margin-bottom: 12px; 
             overflow: hidden;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.02); /* Sedikit shadow agar lebih 'pop' */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02); 
         }
     
         summary { 
-            padding: 18px 15px; /* Padding ditambah sedikit agar lebih nyaman di jari */
+            padding: 18px 15px; 
             cursor: pointer; 
             font-weight: bold; 
             font-size: 0.9rem; 
             color: #334155; 
             display: flex; 
-            align-items: center; /* KUNCI: Menaruh panah tepat di tengah secara vertikal */
+            align-items: center; /* Center vertical */
             outline: none;
             transition: background 0.2s;
         }
     
-        /* Menghapus default marker agar kita bisa mengatur posisinya dengan Flexbox */
+        /* Manage arrows' position manually */
         summary::-webkit-details-marker { display: none; }
         summary { list-style: none; }
     
-        /* Membuat panah native tiruan yang posisinya bisa kita kontrol secara vertikal */
+        /* Pseduo element for arrows */
         summary::before {
             content: "▶"; 
             color: rgb(5, 150, 177);
@@ -208,7 +217,7 @@
             transition: transform 0.2s ease;
         }
     
-        /* Memutar panah saat FAQ dibuka */
+        /* Turn the arrow when question clicked */
         details[open] summary::before {
             transform: rotate(90deg);
         }
@@ -230,7 +239,7 @@
         summary:hover { background: #f8fafc; }
     
         .faq-content { 
-            padding: 15px 15px 15px 44px; /* Alinyemen disesuaikan dengan posisi teks pertanyaan */
+            padding: 15px 15px 15px 44px; 
             border-top: 1px solid #e2e8f0; 
             font-size: 0.85rem; 
             line-height: 1.6; 
