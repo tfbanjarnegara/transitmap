@@ -98,6 +98,7 @@
         }
     </style>
 </head>
+    
 <body>
     <h1>Peta Jaringan Angkutan Umum Banjarnegara</h1>
     
@@ -113,7 +114,44 @@
         <a href="petatfb.pdf" class="btn" download>Download PDF Map</a>
     </div>
 
-   <style>
+    <div class="faq-section">
+        <h3 style="color: #475569; margin-bottom: 20px;">Tanya Jawab / FAQ</h3>
+    
+        <details>
+            <summary>Bagaimana cara memberhentikan angkutan? / <i>How to stop the vehicle?</i></summary>
+            <div class="faq-content">
+                <p><strong>ID:</strong> Karena sistem naik-turun bebas, Anda bisa menunggu di pinggir jalan dan memberi tahu pengemudi saat ingin turun.</p>
+                <p><strong>EN:</strong> <i>Since it is a stop-on-request system, you can hail it from the roadside or inform the driver when you want to alight</i>.</p>
+            </div>
+        </details>
+    
+        <details>
+            <summary>Metode pembayaran apa yang tersedia? / <i>What payment methods are available?</i></summary>
+            <div class="faq-content">
+                <p><strong>ID:</strong> Saat ini hanya menerima <b>tunai</b>. Belum tersedia pembayaran non-tunai (QRIS/Kartu).</p>
+                <p><strong>EN:</strong> <i>Currently, only <b>cash</b> is accepted. Electronic payments (QRIS/Cards) are not yet available</i>.</p>
+            </div>
+        </details>
+    
+        <details>
+            <summary>Apakah ada halte bus resmi? / <i>Are there official bus stops?</i></summary>
+            <div class="faq-content">
+                <p><strong>ID:</strong> Titik pada peta adalah rujukan lokasi berhenti, bukan halte fisik bertanda resmi.</p>
+                <p><strong>EN:</strong> <i>The points on the map are reference locations to stop, not official sheltered bus stops with signage</i>.</p>
+            </div>
+        </details>
+    </div>
+    
+    <style>
+        .faq-section { max-width: 600px; margin: 40px auto; text-align: left; padding: 0 20px; }
+        details { background: white; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 10px; overflow: hidden; }
+        summary { padding: 15px; cursor: pointer; font-weight: bold; font-size: 0.9rem; color: #334155; list-style: none; outline: none; transition: background 0.2s; }
+        summary:hover { background: #f8fafc; }
+        summary::-webkit-details-marker { display: none; } /* Hide default arrow in Chrome */
+        .faq-content { padding: 15px; border-top: 1px solid #e2e8f0; font-size: 0.85rem; line-height: 1.6; color: #64748b; background: #fff; }
+    </style>
+    
+    <style>
         /* Styling for the upcoming maps */
         .upcoming-item {
             background: white;
@@ -123,7 +161,7 @@
             color: #64748b; /* Dimmed text */
             font-size: 0.85rem;
             min-width: 180px;
-            text-decoration: none; /* Remove underline huperlink style */
+            text-decoration: none; /* Remove underline hyperlink style */
             display: inline-block;
             transition: all 0.2s ease;
         }
@@ -166,5 +204,19 @@
         </p>
     </footer>
 
+    <script>
+        /* JavaScript for Auto-Collapse Logic */
+        const details = document.querySelectorAll("details");
+        details.forEach((targetDetail) => {
+            targetDetail.addEventListener("click", () => {
+                details.forEach((detail) => {
+                    if (detail !== targetDetail) {
+                        detail.removeAttribute("open");
+                    }
+                });
+            });
+        });
+    </script> 
+    
 </body>
 </html>
