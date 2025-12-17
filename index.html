@@ -85,24 +85,27 @@
             line-height: 1.1; /* Keeps vertical alignment tight */
         }
         
-        /* Red TFI Logo Alignment: Mathematically Centered */
+        /* Red TFI Logo Alignment: Forced Vertical Lock */
         .subsidiary-line {
             font-size: clamp(0.8rem, 2.5vw, 0.95rem);
             color: #475569;
             margin-top: 4px; 
             display: flex;
-            align-items: center; /* This centers the red logo with its line of text */
-            gap: 8px;
+            align-items: center; 
+            gap: 6px;
             white-space: nowrap;
+            line-height: 1; /* Prevents invisible 'padding' on text from pushing it down */
         }
         
         .tfi-logo-small {
+            /* Fluid size for the red logo */
             height: clamp(15px, 3.5vw, 18px) !important;
             width: clamp(15px, 3.5vw, 18px) !important;
             border-radius: 50%;
             flex-shrink: 0;
             box-shadow: none !important;
-            display: inline-block;
+            display: block; /* Changes from inline-block to block to remove baseline bias */
+            margin: 0; 
         }
 
         .tfi-name {
