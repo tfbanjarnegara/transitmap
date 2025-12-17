@@ -40,10 +40,12 @@
         .brand-header {
             display: flex;
             align-items: center; /* Vertically centers the main logo with the text block */
-            padding: 10px 15px; /* Reduced padding to move it more top-left */
-            background: transparent;
-            width: 100%;
-            box-sizing: border-box;
+            background: white; /* Text container, white */
+            padding: 15px 20px;
+            margin: 10px 15px; /* Moves it away from screen edges */
+            border-radius: 12px; /* Rounded corners */
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
         }
         
         .main-logo {
@@ -59,36 +61,41 @@
         .brand-text {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            /*justify-content: center;*/
             text-align: left;
         }
         
         .org-name {
-            font-size: 1.4rem; /* Adjusted for better mobile fit */
-            font-weight: 700;
+            font-size: 1.3rem; /* Adjusted for better mobile fit */
+            font-weight: 500;
             color: #000;
             margin: 0;
-            line-height: 1.1;
+            line-height: 1.2;
             white-space: nowrap; /* Prevents text from stacking/breaking */
         }
         
         .subsidiary-line {
             font-size: 0.85rem;
-            color: #333;
-            margin-top: 3px;
+            color: #475569;
+            margin-top: 2px;
             display: flex;
-            align-items: center; /* Vertically centers TFI logo with its line of text */
-            gap: 5px;
+            align-items: center; /* This is the horizontal center fix */
+            gap: 6px;
             white-space: nowrap; /* Prevents "Bagian dari" from breaking away */
         }
         
         .tfi-logo-small {
             height: 14px !important;
             width: 14px !important;
-            object-fit: contain;
             border-radius: 50%;
             flex-shrink: 0;
             box-shadow: none !important;
+            display: inline-block;
+            margin: 0; /* Clear previous margins */
+        }
+
+        .tfi-name {
+            font-weight: 400; /* Consistent non-bold style */
         }
 
         /* Page Content Spacing */
@@ -191,7 +198,7 @@
             <div class="subsidiary-line">
                 <span>Bagian dari</span>
                 <img src="tfi-logo.png" alt="TFI Logo" class="tfi-logo-small">
-                <strong>Transport for Indonesia</strong>
+                <span class="tfi-name">Transport for Indonesia</span>
             </div>
         </div>
     </header>
