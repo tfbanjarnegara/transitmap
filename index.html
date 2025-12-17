@@ -37,16 +37,19 @@
         }
 
         /* Branding Container - Spans across, centered on page, content on left */
+        /* Ensure the container centers the logo and text block as a whole */
+        /* Branding Box: Spans across the page on desktop, content on left */
         .brand-header {
             display: flex;
-            align-items: center; 
-            background: white; 
-            padding: 15px 20px;
+            align-items: center; /* Perfect vertical center for both logos */
+            background: white;
+            padding: clamp(12px, 3vw, 18px) clamp(15px, 5vw, 25px);
             
-            /* Centering the box itself on the page */
-            margin: 10px auto; 
-            max-width: 600px;  /* Matches FAQ width for consistency */
-            width: 90%;        /* Breathing room for mobile */
+            /* Centering the container itself */
+            margin: 15px auto; 
+            /* CHANGED: Wider max-width for desktop so it doesn't look like a tiny box */
+            max-width: 900px;  
+            width: 92%; /* Maintains the nice side margins on mobile */
             
             border-radius: 12px; 
             border: 1px solid #e2e8f0;
@@ -57,45 +60,45 @@
         }
         
         .main-logo {
-            height: clamp(45px, 12vw, 55px) !important;
-            width: clamp(45px, 12vw, 55px) !important;
+            height: clamp(48px, 12vw, 60px) !important;
+            width: clamp(48px, 12vw, 60px) !important;
             object-fit: contain;
             border-radius: 50%;
             flex-shrink: 0;
-            margin-right: 15px;
+            margin-right: clamp(12px, 4vw, 20px);
             box-shadow: none !important;
         }
         
         .brand-text {
             display: flex;
             flex-direction: column;
+            justify-content: center;
             text-align: left;
             min-width: 0;
         }
         
         .org-name {
-            font-size: clamp(1.1rem, 4vw, 1.3rem);
+            font-size: clamp(1.2rem, 4.5vw, 1.5rem); /* Slightly larger for desktop presence */
             font-weight: 500;
             color: #000;
             margin: 0;
-            line-height: 1.2;
-            white-space: normal;
-            overflow-wrap: break-word; 
+            line-height: 1.1; /* Keeps vertical alignment tight */
         }
         
+        /* Red TFI Logo Alignment: Mathematically Centered */
         .subsidiary-line {
-            font-size: clamp(0.75rem, 2.5vw, 0.85rem);
+            font-size: clamp(0.8rem, 2.5vw, 0.95rem);
             color: #475569;
-            margin-top: 2px;
+            margin-top: 4px; 
             display: flex;
-            align-items: center; /* Fix for TFI logo alignment */
-            gap: 6px;
+            align-items: center; /* This centers the red logo with its line of text */
+            gap: 8px;
             white-space: nowrap;
         }
         
         .tfi-logo-small {
-            height: clamp(14px, 3.5vw, 16px) !important;
-            width: clamp(14px, 3.5vw, 16px) !important;
+            height: clamp(15px, 3.5vw, 18px) !important;
+            width: clamp(15px, 3.5vw, 18px) !important;
             border-radius: 50%;
             flex-shrink: 0;
             box-shadow: none !important;
