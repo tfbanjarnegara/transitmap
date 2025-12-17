@@ -76,14 +76,17 @@
             line-height: 1.1;
         }
         
-        /* TFI Alignment: Anchored to the line of text */
         .subsidiary-line {
             font-size: clamp(0.75rem, 2.5vw, 0.9rem);
             color: #475569;
             margin-top: 4px;
-            display: flex;
-            align-items: center; /* Vertical anchor to the text line */
-            gap: 6px; /* Precise horizontal spacing */
+            
+            display: flex !important;      /* Forces flex mode */
+            align-items: center !important; /* Forces vertical center */
+            line-height: 1 !important;      /* Strips away extra font spacing */
+            height: 1.2em;                 /* Locks the height to the text size */
+            
+            gap: 6px;
             white-space: nowrap;
         }
         
@@ -93,9 +96,6 @@
             object-fit: contain;
             border-radius: 50%;
             flex-shrink: 0;
-            box-shadow: none !important;
-            /* FIX: Nudges the logo down 1px to align with the visual center of the font */
-            transform: translateY(1px); 
         }
         
         .tfi-name {
