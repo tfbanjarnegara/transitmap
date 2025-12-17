@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7VWBQHQD9W"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -12,6 +11,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="tfb-logo.png">
 
     <meta name="title" content="Peta Angkutan Umum Banjarnegara">
     <meta name="description" content="Peta jaringan transportasi umum Kabupaten Banjarnegara. Download rute dan panduan transit terbaru.">
@@ -30,7 +30,7 @@
         body { 
             font-family: 'Inter', sans-serif; 
             text-align: center; 
-            padding: 40px 20px; 
+            padding: 20px 0 40px 0; 
             background-color: #f0f4f8; 
             color: #333;
             margin: 0;
@@ -39,80 +39,84 @@
         /* Logo Header Styles */
         .brand-header {
             display: flex;
-            align-items: center; /* Vertically centers the main logo with the text block */
-            background: white; /* Text container, white */
+            align-items: center;
+            background: white;
             padding: 15px 20px;
-            margin: 10px 15px; /* Moves it away from screen edges */
-            border-radius: 12px; /* Rounded corners */
+            margin: 10px 15px;
+            border-radius: 12px;
             border: 1px solid #e2e8f0;
             box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            overflow: hidden;
+            width: fit-content; /* Box only as wide as content */
+            text-align: left;
         }
         
         .main-logo {
-            height: 40px !important;
-            width: 40px !important;
+            /* FLUID LOGO: Shrinks between 45px and 55px */
+            height: clamp(45px, 12vw, 55px) !important;
+            width: clamp(45px, 12vw, 55px) !important;
             object-fit: contain;
             border-radius: 50%;
             flex-shrink: 0;
             margin-right: 12px;
-            box-shadow: none !important; /* Removes global img shadow */
+            box-shadow: none !important;
         }
         
         .brand-text {
             display: flex;
             flex-direction: column;
-            /*justify-content: center;*/
             text-align: left;
+            min-width: 0;
         }
         
         .org-name {
-            font-size: 1.3rem; /* Adjusted for better mobile fit */
+            /* FLUID TEXT: Shrinks between 1.1rem and 1.3rem */
+            font-size: clamp(1.1rem, 4vw, 1.3rem);
             font-weight: 500;
             color: #000;
             margin: 0;
             line-height: 1.2;
-            white-space: nowrap; /* Prevents text from stacking/breaking */
+            white-space: normal;
+            overflow-wrap: break-word; 
         }
         
         .subsidiary-line {
-            font-size: 0.85rem;
+            font-size: clamp(0.75rem, 2.5vw, 0.85rem);
             color: #475569;
             margin-top: 2px;
             display: flex;
-            align-items: center; /* This is the horizontal center fix */
+            align-items: center;
             gap: 6px;
-            white-space: nowrap; /* Prevents "Bagian dari" from breaking away */
+            white-space: nowrap;
         }
         
         .tfi-logo-small {
-            height: 14px !important;
-            width: 14px !important;
+            /* FLUID TFI LOGO: Shrinks between 14px and 16px */
+            height: clamp(14px, 3.5vw, 16px) !important;
+            width: clamp(14px, 3.5vw, 16px) !important;
             border-radius: 50%;
             flex-shrink: 0;
             box-shadow: none !important;
             display: inline-block;
-            margin: 0; /* Clear previous margins */
         }
 
         .tfi-name {
-            font-weight: 400; /* Consistent non-bold style */
+            font-weight: 400;
         }
 
-        /* Page Content Spacing */
         .content-wrapper {
             text-align: center;
             padding: 20px;
         }
 
         h1 {
-            font-size: 1.6rem;
-            margin-top: 40px; /* Increased top spacing to prevent crowding on mobile status bars */
-            margin-bottom: 40px; /* Increased bottom spacing to separate from the image preview */
+            font-size: clamp(1.4rem, 5vw, 1.6rem);
+            margin-top: 30px;
+            margin-bottom: 30px;
         }
 
-        /* Responsive Map Image */
         img { 
-            max-width: 100%; 
+            max-width: 90%; 
             height: auto; 
             border-radius: 8px; 
             box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
@@ -120,7 +124,6 @@
             cursor: pointer;
         }
 
-        /* The Main Button using your specific RGB color */
         .btn { 
             display: inline-block; 
             padding: 15px 30px; 
@@ -140,13 +143,13 @@
             transform: translateY(-2px); 
         }
 
-        /* Upcoming Maps Section */
         .upcoming-section {
             margin-top: 60px;
             padding: 30px 10px;
             background: rgba(255, 255, 255, 0.5);
             border-radius: 12px;
         }
+
         .upcoming-grid {
             display: flex;
             justify-content: center;
@@ -154,33 +157,112 @@
             flex-wrap: wrap;
             margin-top: 15px;
         }
+
         .upcoming-item {
             background: white;
             padding: 15px;
             border-radius: 8px;
             border: 1px dashed #cbd5e1;
-            color: #94a3b8;
+            color: #64748b;
             font-size: 0.85rem;
-            min-width: 160px;
+            min-width: 180px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.2s ease;
         }
 
-        /* Footer Styles */
+        .upcoming-item:hover {
+            border-style: solid;
+            border-color: rgb(5, 150, 177);
+            color: rgb(5, 150, 177);
+            background-color: #f8fafc;
+            transform: translateY(-1px);
+        }
+
+        .faq-section { max-width: 600px; margin: 40px auto; padding: 0 20px; }
+        
+        details { 
+            background: white; 
+            border: 1px solid #e2e8f0; 
+            border-radius: 8px; 
+            margin-bottom: 12px; 
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02); 
+        }
+
+        summary { 
+            padding: 18px 15px; 
+            cursor: pointer; 
+            font-weight: bold; 
+            font-size: 0.9rem; 
+            color: #334155; 
+            display: flex; 
+            align-items: center; 
+            outline: none;
+            transition: background 0.2s;
+        }
+
+        summary::-webkit-details-marker { display: none; }
+        summary { list-style: none; }
+
+        summary::before {
+            content: "▶"; 
+            color: rgb(5, 150, 177);
+            font-size: 0.7rem;
+            margin-right: 12px;
+            flex-shrink: 0;
+            transition: transform 0.2s ease;
+        }
+
+        details[open] summary::before {
+            transform: rotate(90deg);
+        }
+
+        .summary-content {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            line-height: 1.4;
+        }
+
+        .summary-content i {
+            font-weight: normal;
+            font-size: 0.8rem;
+            color: #64748b;
+            margin-top: 2px;
+        }
+
+        summary:hover { background: #f8fafc; }
+
+        .faq-content { 
+            padding: 15px 15px 15px 44px; 
+            border-top: 1px solid #e2e8f0; 
+            font-size: 0.85rem; 
+            line-height: 1.6; 
+            color: #64748b; 
+            background: #fff; 
+            text-align: left;
+        }
+
         footer {
             margin-top: 60px;
             font-size: 0.85rem;
             color: #777;
             line-height: 1.8;
         }
+
         .footer-link {
             color: rgb(5, 150, 177);
             text-decoration: none;
             font-weight: bold;
             padding: 0 5px;
         }
+
         .footer-link:hover {
             text-decoration: underline;
             color: rgb(4, 120, 142); 
         }
+
         .divider {
             color: #ccc;
             user-select: none;
@@ -192,7 +274,6 @@
 
     <header class="brand-header">
         <img src="tfb-logo.png" alt="TFB Logo" class="main-logo">
-        
         <div class="brand-text">
             <div class="org-name">Transportasi Banjarnegara</div>
             <div class="subsidiary-line">
@@ -275,101 +356,6 @@
         </details>
     </div>
     
-    <style>
-        .faq-section { max-width: 600px; margin: 40px auto; padding: 0 20px; }
-        
-        details { 
-            background: white; 
-            border: 1px solid #e2e8f0; 
-            border-radius: 8px; 
-            margin-bottom: 12px; 
-            overflow: hidden;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.02); 
-        }
-    
-        summary { 
-            padding: 18px 15px; 
-            cursor: pointer; 
-            font-weight: bold; 
-            font-size: 0.9rem; 
-            color: #334155; 
-            display: flex; 
-            align-items: center; /* Center vertical */
-            outline: none;
-            transition: background 0.2s;
-        }
-    
-        /* Manage arrows' position manually */
-        summary::-webkit-details-marker { display: none; }
-        summary { list-style: none; }
-    
-        /* Pseduo element for arrows */
-        summary::before {
-            content: "▶"; 
-            color: rgb(5, 150, 177);
-            font-size: 0.7rem;
-            margin-right: 12px;
-            flex-shrink: 0;
-            transition: transform 0.2s ease;
-        }
-    
-        /* Turn the arrow when question clicked */
-        details[open] summary::before {
-            transform: rotate(90deg);
-        }
-    
-        .summary-content {
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-            line-height: 1.4;
-        }
-    
-        .summary-content i {
-            font-weight: normal;
-            font-size: 0.8rem;
-            color: #64748b;
-            margin-top: 2px;
-        }
-    
-        summary:hover { background: #f8fafc; }
-    
-        .faq-content { 
-            padding: 15px 15px 15px 44px; 
-            border-top: 1px solid #e2e8f0; 
-            font-size: 0.85rem; 
-            line-height: 1.6; 
-            color: #64748b; 
-            background: #fff; 
-            text-align: left;
-        }
-    </style>
-    
-    <style>
-        /* Styling for the upcoming maps */
-        .upcoming-item {
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px dashed #cbd5e1;
-            color: #64748b; /* Dimmed text */
-            font-size: 0.85rem;
-            min-width: 180px;
-            text-decoration: none; /* Remove underline hyperlink style */
-            display: inline-block;
-            transition: all 0.2s ease;
-        }
-    
-        /* Subtle hover style */
-        .upcoming-item:hover {
-            border-style: solid;
-            border-color: rgb(5, 150, 177); /* Subtle brand color during hover */
-            color: rgb(5, 150, 177);
-            background-color: #f8fafc;
-            transform: translateY(-1px);
-        }
-    </style>
-    
     <div class="upcoming-section">
         <h3 style="font-size: 1rem; color: #475569; margin-bottom: 15px;">Coming Soon</h3>
         <div class="upcoming-grid">
@@ -399,7 +385,6 @@
     </footer>
 
     <script>
-        /* JavaScript for Auto-Collapse Logic */
         const details = document.querySelectorAll("details");
         details.forEach((targetDetail) => {
             targetDetail.addEventListener("click", () => {
