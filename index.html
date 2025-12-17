@@ -11,7 +11,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="tfb-logo.png">
+    <link rel="icon" type="image/png" href="tfb-logo-rounded.png">
 
     <meta name="title" content="Peta Angkutan Umum Banjarnegara">
     <meta name="description" content="Peta jaringan transportasi umum Kabupaten Banjarnegara. Download rute dan panduan transit terbaru.">
@@ -30,35 +30,39 @@
         body { 
             font-family: 'Inter', sans-serif; 
             text-align: center; 
-            padding: 20px 0 40px 0; 
+            padding: 10px 0 40px 0; 
             background-color: #f0f4f8; 
             color: #333;
             margin: 0;
         }
 
-        /* Logo Header Styles */
+        /* Branding Container - Spans across, centered on page, content on left */
         .brand-header {
             display: flex;
-            align-items: center;
-            background: white;
+            align-items: center; 
+            background: white; 
             padding: 15px 20px;
-            margin: 10px 15px;
-            border-radius: 12px;
+            
+            /* Centering the box itself on the page */
+            margin: 10px auto; 
+            max-width: 600px;  /* Matches FAQ width for consistency */
+            width: 90%;        /* Breathing room for mobile */
+            
+            border-radius: 12px; 
             border: 1px solid #e2e8f0;
             box-shadow: 0 4px 6px rgba(0,0,0,0.02);
             overflow: hidden;
-            width: fit-content; /* Box only as wide as content */
-            text-align: left;
+            text-align: left; 
+            box-sizing: border-box;
         }
         
         .main-logo {
-            /* FLUID LOGO: Shrinks between 45px and 55px */
             height: clamp(45px, 12vw, 55px) !important;
             width: clamp(45px, 12vw, 55px) !important;
             object-fit: contain;
             border-radius: 50%;
             flex-shrink: 0;
-            margin-right: 12px;
+            margin-right: 15px;
             box-shadow: none !important;
         }
         
@@ -70,7 +74,6 @@
         }
         
         .org-name {
-            /* FLUID TEXT: Shrinks between 1.1rem and 1.3rem */
             font-size: clamp(1.1rem, 4vw, 1.3rem);
             font-weight: 500;
             color: #000;
@@ -85,13 +88,12 @@
             color: #475569;
             margin-top: 2px;
             display: flex;
-            align-items: center;
+            align-items: center; /* Fix for TFI logo alignment */
             gap: 6px;
             white-space: nowrap;
         }
         
         .tfi-logo-small {
-            /* FLUID TFI LOGO: Shrinks between 14px and 16px */
             height: clamp(14px, 3.5vw, 16px) !important;
             width: clamp(14px, 3.5vw, 16px) !important;
             border-radius: 50%;
@@ -104,6 +106,7 @@
             font-weight: 400;
         }
 
+        /* Rest of the Content Styles */
         .content-wrapper {
             text-align: center;
             padding: 20px;
@@ -179,6 +182,7 @@
             transform: translateY(-1px);
         }
 
+        /* FAQ Section Styles */
         .faq-section { max-width: 600px; margin: 40px auto; padding: 0 20px; }
         
         details { 
