@@ -115,7 +115,7 @@
     </div>
     
     <div class="faq-section">
-        <h3 style="color: #475569; margin-bottom: 20px;">Tanya Jawab/<br><i>Frequently Asked Questions</i></h3>
+        <h3 style="color: #475569; margin-bottom: 20px; text-align: center;">Tanya Jawab/<br><i>Frequently Asked Questions</i></h3>
     
         <details>
             <summary>
@@ -171,41 +171,52 @@
     </div>
     
     <style>
-        .faq-section { 
-            max-width: 600px; 
-            margin: 40px auto; 
-            text-align: left; 
-            padding: 0 20px; 
-        }
-    
+        .faq-section { max-width: 600px; margin: 40px auto; padding: 0 20px; }
+        
         details { 
             background: white; 
             border: 1px solid #e2e8f0; 
             border-radius: 8px; 
-            margin-bottom: 10px; 
-            overflow: hidden; 
+            margin-bottom: 12px; 
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02); /* Sedikit shadow agar lebih 'pop' */
         }
     
         summary { 
-            padding: 15px; 
+            padding: 18px 15px; /* Padding ditambah sedikit agar lebih nyaman di jari */
             cursor: pointer; 
             font-weight: bold; 
             font-size: 0.9rem; 
             color: #334155; 
-            display: list-item; /* Native arrow */
+            display: flex; 
+            align-items: center; /* KUNCI: Menaruh panah tepat di tengah secara vertikal */
             outline: none;
+            transition: background 0.2s;
         }
     
-        summary::marker {
+        /* Menghapus default marker agar kita bisa mengatur posisinya dengan Flexbox */
+        summary::-webkit-details-marker { display: none; }
+        summary { list-style: none; }
+    
+        /* Membuat panah native tiruan yang posisinya bisa kita kontrol secara vertikal */
+        summary::before {
+            content: "▶"; 
             color: rgb(5, 150, 177);
+            font-size: 0.7rem;
+            margin-right: 12px;
+            flex-shrink: 0;
+            transition: transform 0.2s ease;
         }
     
-        /* This aligns the two lines of text to the right of the native arrow */
+        /* Memutar panah saat FAQ dibuka */
+        details[open] summary::before {
+            transform: rotate(90deg);
+        }
+    
         .summary-content {
-            display: inline-flex;
+            display: flex;
             flex-direction: column;
-            vertical-align: top;
-            margin-left: 5px; 
+            text-align: left;
             line-height: 1.4;
         }
     
@@ -213,17 +224,19 @@
             font-weight: normal;
             font-size: 0.8rem;
             color: #64748b;
+            margin-top: 2px;
         }
     
         summary:hover { background: #f8fafc; }
     
         .faq-content { 
-            padding: 15px 15px 15px 45px; 
+            padding: 15px 15px 15px 44px; /* Alinyemen disesuaikan dengan posisi teks pertanyaan */
             border-top: 1px solid #e2e8f0; 
             font-size: 0.85rem; 
             line-height: 1.6; 
             color: #64748b; 
             background: #fff; 
+            text-align: left;
         }
     </style>
     
