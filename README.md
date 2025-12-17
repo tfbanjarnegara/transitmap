@@ -1,45 +1,59 @@
-Peta jaringan angkutan umum Kabupaten Banjarneegara yang meliputi 20 kecamatan.
-Angkutan mencakup bus medium antar kota, mikro bus, dan angkot lokal yang menghubungkan antar desa dan kecamatan.
+# Peta Jaringan Angkutan Umum Kabupaten Banjarnegara
 
-Jenis-jenis angkutan
-Angkutan kota dan angkutan pedesaan dengan kapasitas 6–8 orang, jam operasi 5.00–17.00:
-  A2: Terminal – Mrica
-  A3: Terminal – Madukara
-  A4: Terminal – Kesenet
-  A5: Terminal – Kenteng – Madukara
-  A6: Terminal – Kebutuhjurang
-  A7: Terminal – Lebakwangi
-  A8: Terminal – Masaran
-  A9: Terminal – Tunggara
-  A10: Terminal – Wanadri
-  A11: Terminal – Pandanarum 
-  A13: Terminal – Wanadadi
-  A14: Terminal – Linggasari
-  A15: Terminal – Sembawa
-  A17: Terminal – Prendengan
-  A18: Terminal – Kemiri
-  A21: Terminal – Nagasari
-  A22: Terminal – Larangan
-  C3: Pasar Wanadadi – Mlaya
-  D2: Pasar Klampok – Gandulekor
-  D3: Pasar Klampok – Pasar Pakikiran
+Peta jaringan angkutan umum Kabupaten Banjarnegara ini meliputi 20 kecamatan. [cite_start]Layanan ini mencakup bus medium antar kota, mikro bus, dan angkot lokal yang menghubungkan antar desa dan kecamatan[cite: 1, 2].
 
-Angkutan mikro dengan kapasitas 12–15 orang, jam operasi 5.00–18.00:
-  E1: Terminal – Pagentan – Batur
-  E2: Terminal – Punggelan
-  E3: Terminal – Karangkobar – Kalibening
-  E4: Terminal – Karangkobar – Batur
+### Jenis-Jenis Layanan
 
-Bus Sekolah gratis khusus pelajar dengan rute Dinhub – Wanadadi – Rakit – Mandiraja – Bawang, beroperasi pada 06.00 dan 15.00.
+#### Angkutan Lokal (Kapasitas 6–8 orang)
+[cite_start]**Jam Operasi:** ±5.00–17.00 [cite: 7, 52]
 
-Bus antar kota medium dengan kapasitas 16–20 orang, rute Purwokerto – Banjarnegara – Wonosobo, jam operasi 05.00–20.00.
+* [cite_start]**A2:** Terminal – Mrica [cite: 8]
+* [cite_start]**A3:** Terminal – Madukara [cite: 10]
+* [cite_start]**A4:** Terminal – Kesenet [cite: 12]
+* [cite_start]**A5:** Terminal – Kenteng – Madukara [cite: 14]
+* [cite_start]**A6:** Terminal – Kebutuhjurang [cite: 16]
+* [cite_start]**A7:** Terminal – Lebakwangi [cite: 17]
+* [cite_start]**A8:** Terminal – Masaran [cite: 18]
+* [cite_start]**A9:** Terminal – Tunggara [cite: 19]
+* [cite_start]**A10:** Terminal – Wanadri [cite: 20]
+* [cite_start]**A11:** Terminal – Pandanarum [cite: 21]
+* [cite_start]**A13:** Terminal – Wanadadi [cite: 22]
+* [cite_start]**A14:** Terminal – Linggasari [cite: 23]
+* [cite_start]**A15:** Terminal – Sembawa [cite: 9]
+* [cite_start]**A17:** Terminal – Prendengan [cite: 11]
+* [cite_start]**A18:** Terminal – Kemiri [cite: 13]
+* [cite_start]**A21:** Terminal – Nagasari [cite: 15]
+* [cite_start]**A22:** Terminal – Larangan [cite: 7]
+* [cite_start]**C3:** Pasar Wanadadi – Mlaya [cite: 25]
+* [cite_start]**D2:** Pasar Klampok – Gandulekor [cite: 26]
+* [cite_start]**D3:** Pasar Klampok – Pasar Pakikiran [cite: 27]
 
-Titik pemberhentian yang diperlihatkan adalah titik-titk referensi yang dilewati rute tertentu, 
-bukan titik berhenti resmi dengan sistem naik-turun bebas.
+#### Angkutan Mikro (Kapasitas 12–15 orang)
+[cite_start]**Jam Operasi:** ±5.00–18.00 [cite: 52]
 
-Hingga sekarang, semua rute masih hanya menerima tunai dan tidak bisa menerima jenis pembayaran non-tunai
-seperti QRIS dan kartu uang elektronik (KUE) seperti BCA flazz/BNI tapcash/BRI brizzi.
+* [cite_start]**E1:** Terminal – Pagentan – Batur [cite: 30]
+* [cite_start]**E2:** Terminal – Punggelan [cite: 31]
+* [cite_start]**E3:** Terminal – Karangkobar – Kalibening [cite: 34]
+* [cite_start]**E4:** Terminal – Karangkobar – Batur [cite: 35]
 
-Dikembangkan oleh Sakti Jati (Transportasi Banjarnegara) dengan kontribusi dan inspirasi dari berbagai pihak.
+#### Bus Sekolah Gratis (Khusus Pelajar)
+[cite_start]**Jam Operasi:** 06.00 & 15.00 [cite: 24, 36]
+* [cite_start]**Rute:** Dishub – Wanadadi – Rakit – Mandiraja – Bawang [cite: 28]
 
-Kami sangat mengharapkan kritik dan saran, hubungi kami di email transportforbna@gmail.com atau Instagram @tfbanjarnegara.
+#### Bus Antar Kota Medium (Kapasitas 16–20 orang)
+[cite_start]**Jam Operasi:** ±05.00–20.00 [cite: 52]
+* [cite_start]**Rute:** Purwokerto – Banjarnegara – Wonosobo [cite: 32]
+
+---
+
+### ⚠️ Informasi Penting
+* **Sistem Naik-Turun Bebas:** Titik pemberhentian yang diperlihatkan adalah titik rujukan/referensi. [cite_start]Layanan ini tidak memiliki titik berhenti resmi dan beroperasi dengan sistem **naik-turun bebas (stop-on-request)**[cite: 62].
+* **Metode Pembayaran:** Saat ini hanya menerima **tunai**. [cite_start]Tidak melayani pembayaran non-tunai (QRIS/KUE seperti BCA Flazz, BNI TapCash, atau BRI Brizzi)[cite: 191].
+
+### Kontribusi
+[cite_start]Dikembangkan oleh **Sakti Jati (Transportasi Banjarnegara)** dengan kontribusi dan inspirasi dari berbagai pihak[cite: 53, 54].
+
+### Kritik & Saran
+Kami sangat mengharapkan masukan Anda. Hubungi kami melalui:
+* [cite_start]**Email:** transportforbna@gmail.com [cite: 61]
+* [cite_start]**Instagram:** [@tfbanjarnegara](https://instagram.com/tfbanjarnegara) [cite: 63]
