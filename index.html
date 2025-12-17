@@ -36,76 +36,63 @@
             margin: 0;
         }
 
-        /* Branding Container - Spans across, centered on page, content on left */
-        /* Ensure the container centers the logo and text block as a whole */
-        /* Branding Box: Spans across the page on desktop, content on left */
+        /* Branding Box: Spans across, centered on page, content on left */
         .brand-header {
             display: flex;
-            align-items: center; /* Perfect vertical center for both logos */
+            align-items: center; /* THE MASTER LOCK: Centers everything vertically */
             background: white;
-            padding: clamp(12px, 3vw, 18px) clamp(15px, 5vw, 25px);
-            
-            /* Centering the container itself */
+            padding: 15px 20px;
             margin: 15px auto; 
-            /* CHANGED: Wider max-width for desktop so it doesn't look like a tiny box */
-            max-width: 900px;  
-            width: 92%; /* Maintains the nice side margins on mobile */
-            
+            max-width: 900px; /* Spans across desktop */
+            width: 92%;       /* Fits mobile */
             border-radius: 12px; 
             border: 1px solid #e2e8f0;
             box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-            overflow: hidden;
-            text-align: left; 
             box-sizing: border-box;
         }
         
         .main-logo {
-            height: clamp(48px, 12vw, 60px) !important;
-            width: clamp(48px, 12vw, 60px) !important;
+            /* Fluid size enabled, but !important ensures it stays square */
+            height: clamp(48px, 12vw, 58px) !important;
+            width: clamp(48px, 12vw, 58px) !important;
             object-fit: contain;
             border-radius: 50%;
             flex-shrink: 0;
-            margin-right: clamp(12px, 4vw, 20px);
-            box-shadow: none !important;
+            margin-right: 15px;
+            display: block; /* Removes baseline bias */
         }
         
         .brand-text {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: center; /* Centers the two lines of text internally */
             text-align: left;
-            min-width: 0;
         }
         
         .org-name {
-            font-size: clamp(1.2rem, 4.5vw, 1.5rem); /* Slightly larger for desktop presence */
+            font-size: clamp(1.2rem, 4.5vw, 1.4rem);
             font-weight: 500;
             color: #000;
             margin: 0;
-            line-height: 1.1; /* Keeps vertical alignment tight */
+            line-height: 1.2; /* Restored standard line height for stability */
         }
         
-        /* Red TFI Logo Alignment: Forced Vertical Lock */
         .subsidiary-line {
-            font-size: clamp(0.8rem, 2.5vw, 0.95rem);
+            font-size: clamp(0.8rem, 2.5vw, 0.9rem);
             color: #475569;
-            margin-top: 4px; 
+            margin-top: 2px; 
             display: flex;
-            align-items: center; 
+            align-items: center; /* Centers the RED logo with the subsidiary text */
             gap: 6px;
             white-space: nowrap;
-            line-height: 1; /* Prevents invisible 'padding' on text from pushing it down */
         }
         
         .tfi-logo-small {
-            /* Fluid size for the red logo */
-            height: clamp(15px, 3.5vw, 18px) !important;
-            width: clamp(15px, 3.5vw, 18px) !important;
+            height: clamp(15px, 3.5vw, 17px) !important;
+            width: clamp(15px, 3.5vw, 17px) !important;
             border-radius: 50%;
             flex-shrink: 0;
-            box-shadow: none !important;
-            display: block; /* Changes from inline-block to block to remove baseline bias */
-            margin: 0; 
+            display: block;
         }
 
         .tfi-name {
