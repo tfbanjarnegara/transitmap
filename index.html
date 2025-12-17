@@ -90,12 +90,11 @@
         .tfi-logo-small {
             height: clamp(14px, 3.5vw, 16px) !important;
             width: clamp(14px, 3.5vw, 16px) !important;
+            object-fit: contain;
             border-radius: 50%;
             flex-shrink: 0;
-            box-shadow: none !important; /* Visual shadow removed */
-            filter: none !important;
-            /* Manual nudge to fix the "floating" feel while anchored */
-            transform: translateY(1px); 
+            box-shadow: none !important;
+            
         }
         .tfi-name {
             font-weight: 400;
