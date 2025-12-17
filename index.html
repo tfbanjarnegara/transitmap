@@ -38,7 +38,7 @@
 
         .brand-header {
             display: flex;
-            align-items: center; /* PERFECT CENTER: Blue logo vs Text Block */
+            align-items: center; /* VERTICAL LOCK: Centers blue logo with text block */
             background: white;
             padding: 15px 20px;
             margin: 15px auto; 
@@ -57,7 +57,7 @@
             border-radius: 50%;
             flex-shrink: 0;
             margin-right: 15px;
-            display: block;
+            display: block; /* Removes baseline-alignment bias */
         }
         
         .brand-text {
@@ -71,7 +71,7 @@
             font-weight: 500;
             color: #000;
             margin: 0;
-            line-height: 1.1;
+            line-height: 1.1; /* Tightens the box so the logo centers better */
         }
         
         .subsidiary-line {
@@ -79,8 +79,8 @@
             color: #475569;
             margin-top: 4px;
             display: flex;
-            align-items: center; /* PERFECT CENTER: Red logo vs Red text */
-            gap: 6px; /* This keeps the gap IDENTICAL on all screens */
+            align-items: center; /* VERTICAL LOCK: Centers red logo with this specific line */
+            gap: 6px; /* Automatic spacing that never jumps or overlaps */
             white-space: nowrap;
         }
         
@@ -89,7 +89,7 @@
             width: clamp(14px, 3.5vw, 16px) !important;
             border-radius: 50%;
             flex-shrink: 0;
-            display: block; /* Removes baseline bias */
+            display: block;
         }
         .tfi-name {
             font-weight: 400;
@@ -265,7 +265,7 @@
     
 <body>
 
-    <header class="brand-header">
+   <header class="brand-header">
         <img src="tfb-logo.png" alt="TFB Logo" class="main-logo">
         <div class="brand-text">
             <div class="org-name">Transportasi Banjarnegara</div>
