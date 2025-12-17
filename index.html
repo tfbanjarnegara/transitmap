@@ -36,36 +36,40 @@
             margin: 0;
         }
 
-        /* Branding Box: Spans across, centered on page, content on left */
+        /* Container must be 'relative' so logos can be 'absolute' inside it */
         .brand-header {
             display: flex;
-            align-items: center; /* THE MASTER LOCK: Centers everything vertically */
+            position: relative; 
             background: white;
             padding: 15px 20px;
             margin: 15px auto; 
-            max-width: 900px; /* Spans across desktop */
-            width: 92%;       /* Fits mobile */
+            max-width: 900px;
+            width: 92%;
             border-radius: 12px; 
             border: 1px solid #e2e8f0;
             box-shadow: 0 4px 6px rgba(0,0,0,0.02);
             box-sizing: border-box;
+            /* Added height to ensure absolute centering has a fixed reference */
+            min-height: 80px; 
         }
         
         .main-logo {
-            /* Fluid size enabled, but !important ensures it stays square */
+            position: absolute;
+            top: 50%;
+            left: 20px; /* Matches padding-left of header */
+            transform: translateY(-50%); /* PERFECT CENTER: Moves logo up by half its own height */
             height: clamp(48px, 12vw, 58px) !important;
             width: clamp(48px, 12vw, 58px) !important;
             object-fit: contain;
             border-radius: 50%;
-            flex-shrink: 0;
-            margin-right: 15px;
-            display: block; /* Removes baseline bias */
+            box-shadow: none !important;
         }
         
         .brand-text {
+            /* Offset the text to the right to make room for the absolute logo */
+            margin-left: clamp(60px, 15vw, 73px); 
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Centers the two lines of text internally */
             text-align: left;
         }
         
@@ -74,25 +78,34 @@
             font-weight: 500;
             color: #000;
             margin: 0;
-            line-height: 1.2; /* Restored standard line height for stability */
+            line-height: 1.2;
         }
         
         .subsidiary-line {
             font-size: clamp(0.8rem, 2.5vw, 0.9rem);
             color: #475569;
             margin-top: 2px; 
-            display: flex;
-            align-items: center; /* Centers the RED logo with the subsidiary text */
-            gap: 6px;
+            position: relative; /* Anchor for the small red logo */
+            display: block;
             white-space: nowrap;
         }
         
+        /* Forcing the Red Logo into its own absolute position */
         .tfi-logo-small {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            /* You may need to adjust 'left' slightly based on the width of "Bagian dari " */
+            left: 78px; 
             height: clamp(15px, 3.5vw, 17px) !important;
             width: clamp(15px, 3.5vw, 17px) !important;
             border-radius: 50%;
-            flex-shrink: 0;
-            display: block;
+            box-shadow: none !important;
+        }
+        
+        /* Adding a spacer to prevent text from overlapping the absolute red logo */
+        .tfi-name-spacer {
+            margin-left: 24px; /* Space for the 17px logo + 7px gap */
         }
 
         .tfi-name {
