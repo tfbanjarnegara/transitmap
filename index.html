@@ -9,9 +9,20 @@
         gtag('js', new Date());
         gtag('config', 'G-7VWBQHQD9W');
     </script>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="title" content="Peta Angkutan Umum Banjarnegara">
+    <meta name="description" content="Peta jaringan transportasi umum Kabupaten Banjarnegara. Download rute dan panduan transit terbaru.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tfbanjarnegara.github.io/transitmap/">
+    <meta property="og:title" content="Peta Angkutan Umum Banjarnegara">
+    <meta property="og:description" content="Panduan rute Angkot Banjarnegara dalam format digital dan PDF.">
+    <meta property="og:image" content="https://tfbanjarnegara.github.io/transitmap/petatfb-image.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="https://tfbanjarnegara.github.io/transitmap/petatfb-image.jpg">
+    
     <title>Peta Angkutan Umum Banjarnegara</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -22,6 +33,56 @@
             background-color: #f0f4f8; 
             color: #333;
             margin: 0;
+        }
+
+        /* Logo Header Styles */
+        .brand-header {
+            padding: 20px 5%;
+            background: transparent;
+            text-align: left; /* Aligned left as per your request */
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .main-logo {
+            height: 60px; /* Adjust based on your PNG size */
+            width: auto;
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .org-name {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #000;
+            margin: 0;
+            line-height: 1.1;
+        }
+
+        .subsidiary-line {
+            font-size: 0.95rem;
+            color: #333;
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tfi-logo {
+            height: 20px; /* Smaller logo for the subsidiary line */
+            width: auto;
+            vertical-align: middle;
+        }
+
+        /* Page Content Spacing */
+        .content-wrapper {
+            text-align: center;
+            padding: 20px;
         }
 
         h1 {
@@ -109,7 +170,23 @@
 </head>
     
 <body>
-    <h1>Peta Jaringan Angkutan Umum Banjarnegara</h1>
+
+    <header class="brand-header">
+        <img src="tfb-logo.png" alt="TFB Logo" class="main-logo">
+        
+        <div class="brand-text">
+            <p class="org-name">Transportasi Banjarnegara</p>
+            <div class="subsidiary-line">
+                <span>Bagian dari</span>
+                <img src="tfi-logo.png" alt="TFI Logo" class="tfi-logo">
+                <strong>Transport for Indonesia</strong>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <h1>Peta Jaringan Angkutan Umum Banjarnegara</h1>    
+    </div>
     
     <a href="petatfb.pdf">
         <img src="petatfb-image.jpg" alt="Banjarnegara Transit Map">
