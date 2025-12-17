@@ -3,66 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peta Angkutan Banjarnegara</title>
+    <title>Peta Angkutan Umum Banjarnegara</title>
     <style>
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            text-align: center; 
-            margin: 0; 
-            padding: 20px; 
-            background-color: #f9f9f9; 
-            color: #333;
-        }
-        h1 { font-size: 1.5rem; margin-bottom: 10px; }
-        p { font-size: 0.9rem; color: #666; margin-bottom: 20px; }
-        
-        .map-container {
-            width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            background: #fff;
-        }
-        
-        img { 
-            width: 100%; 
-            height: auto; 
-            display: block;
-            cursor: zoom-in;
-        }
-
-        .btn { 
-            display: inline-block; 
-            margin-top: 25px; 
-            padding: 12px 24px; 
-            background-color: rgb(5, 150, 177); 
-            color: white; 
-            text-decoration: none; 
-            border-radius: 25px; 
-            font-weight: bold;
-            font-size: 1rem;
-            transition: background 0.3s;
-        }
-        .btn:hover { background-color: #006666; }
+        body { font-family: sans-serif; text-align: center; padding: 20px; background: #f4f4f4; }
+        img { max-width: 100%; height: auto; border: 5px solid white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .btn { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #008080; color: white; text-decoration: none; border-radius: 5px; }
     </style>
 </head>
 <body>
     <h1>Peta Jaringan Angkutan Umum Banjarnegara</h1>
-    <p>Ketuk gambar untuk melihat dalam ukuran penuh.</p>
     
-    <div class="map-container">
-        <a href="petatfb.pdf">
-            <img src="petatfb.pdf" alt="Peta Transit Banjarnegara">
-        </a>
-    </div>
+    <a href="petatfb.pdf"><img src="petatfb.pdf" alt="Banjarnegara Transit Map"></a>
     
-    <br>
+    <btn>
     <a href="petatfb.pdf" class="btn" download>Download Peta PDF</a>
+    <style>
+    /* 1. Background of the whole page */
+    body { 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        text-align: center; 
+        padding: 40px 20px; 
+        background-color: #f0f4f8; /* Change this hex code for a different background */
+        color: #333; /* Color of the text */
+    }
+
+    /* 2. Styling the Map Image container */
+    img { 
+        max-width: 100%; 
+        height: auto; 
+        border-radius: 8px; /* Rounds the corners of your map */
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Soft shadow for a professional look */
+        margin-bottom: 30px;
+    }
+
+    /* The Main Button */
+    .btn { 
+        display: inline-block; 
+        padding: 15px 30px; 
+        /* Your specific RGB color */
+        background-color: rgb(5, 150, 177); 
+        color: white; 
+        text-decoration: none; 
+        font-weight: bold;
+        border-radius: 50px; 
+        transition: all 0.3s ease; /* Smooth transition for color and shadow */
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    /* The Hover Effect (Slightly Darker) */
+    .btn:hover { 
+        /* A darker version of your RGB (approx 20% darker) */
+        background-color: rgb(4, 120, 142); 
+        box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        transform: translateY(-2px); /* Slight lift effect for that 'nerd' polish */
+    }
+</style>
 
     <footer style="margin-top: 40px; font-size: 0.8rem; color: #999;">
         Dikembangkan oleh Sakti Jati (Transportasi Banjarnegara)
     </footer>
+        
 </body>
 </html>
