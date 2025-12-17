@@ -1,3 +1,5 @@
+![Banjarnegara Transit Map](petatfb.pdf)
+
 # Peta Jaringan Angkutan Umum Kabupaten Banjarnegara
 ### *Banjarnegara Public Transportation Network Map*
 
