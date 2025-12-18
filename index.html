@@ -39,6 +39,7 @@
         /* Branding Box - Clean and Shadowless */
         .brand-header {
             display: flex;
+            /* Center the big logo with the entire text block */
             align-items: center; 
             background: white;
             padding: 15px 20px;
@@ -49,7 +50,8 @@
             border: 1px solid #e2e8f0;
             box-shadow: 0 4px 6px rgba(0,0,0,0.02); 
             box-sizing: border-box;
-            gap: 15px; /* Added consistent gap instead of margin-right on logo */
+            /* Add gap here to ensure space between logo and text */
+            gap: 15px; 
         }
         
         .main-logo {
@@ -83,9 +85,11 @@
             color: #475569;
             margin-top: 4px;
             
-            display: inline-flex !important;  /* Changed to inline-flex to hug content */
-            align-items: center !important; 
-            line-height: 1 !important; 
+            /* The vertical center "Magic" */
+            display: flex !important;
+            align-items: center !important;
+            /* Resetting line-height ensures the browser centers based on the logo's height */
+            line-height: normal !important; 
             gap: 6px;
             white-space: nowrap;
         }
@@ -96,7 +100,8 @@
             object-fit: contain;
             border-radius: 50%;
             flex-shrink: 0;
-            display: block; /* Removes baseline spacing issues */
+            /* Removing vertical-align as Flexbox handles it now */
+            vertical-align: middle; 
         }
         
         .tfi-name {
