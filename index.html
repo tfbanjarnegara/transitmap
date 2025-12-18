@@ -53,16 +53,14 @@
             /* Add gap here to ensure space between logo and text */
             gap: 15px; 
         }
-        
-        .main-logo {
-            height: clamp(48px, 12vw, 55px) !important;
-            width: clamp(48px, 12vw, 55px) !important;
-            object-fit: contain;
-            border-radius: 50%;
-            flex-shrink: 0;
-            /* margin-right removed in favor of header gap for cleaner alignment */
-            box-shadow: none !important; 
-            filter: none !important; 
+
+        .content-wrapper img, a > img { 
+            max-width: 90%; 
+            height: auto; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+            margin-bottom: 10px; /* Keep this for the map only */
+            cursor: pointer;
         }
         
         .brand-text {
@@ -77,31 +75,39 @@
             font-weight: 500;
             color: #000;
             margin: 0;
-            line-height: 1.2; /* Slightly increased for visual balance */
+            line-height: 1.2; /* Increased for visual balance */
         }
         
+        .main-logo, .tfi-logo-small {
+            margin-bottom: 0 !important; /* This kills the floating issue */
+            margin-top: 0 !important;
+            box-shadow: none !important;
+            filter: none !important;
+        }
+
+        /* 2. Specific size for the big logo */
+        .main-logo {
+            height: clamp(48px, 12vw, 55px) !important;
+            width: clamp(48px, 12vw, 55px) !important;
+            margin-right: 15px;
+        }
+
+        /* 3. Specific size for the small TFI logo */
+        .tfi-logo-small {
+            height: clamp(14px, 3.5vw, 16px) !important;
+            width: clamp(14px, 3.5vw, 16px) !important;
+        }
+
+        /* 4. The container that forces vertical centering */
         .subsidiary-line {
             font-size: clamp(0.75rem, 2.5vw, 0.9rem);
             color: #475569;
             margin-top: 4px;
-            
-            /* The vertical center "Magic" */
             display: flex !important;
-            align-items: center !important;
-            /* Resetting line-height ensures the browser centers based on the logo's height */
-            line-height: normal !important; 
+            align-items: center !important; /* Mathematically centers the logo */
+            line-height: 1 !important;
             gap: 6px;
             white-space: nowrap;
-        }
-        
-        .tfi-logo-small {
-            height: clamp(14px, 3.5vw, 16px) !important;
-            width: clamp(14px, 3.5vw, 16px) !important;
-            object-fit: contain;
-            border-radius: 50%;
-            flex-shrink: 0;
-            /* Removing vertical-align as Flexbox handles it now */
-            vertical-align: middle; 
         }
         
         .tfi-name {
