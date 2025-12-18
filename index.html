@@ -39,7 +39,7 @@
         /* Branding Box - Clean and Shadowless */
         .brand-header {
             display: flex;
-            align-items: center; /* Vertically centers the blue logo with the text block */
+            align-items: center; 
             background: white;
             padding: 15px 20px;
             margin: 15px auto; 
@@ -47,8 +47,9 @@
             width: 92%;
             border-radius: 12px; 
             border: 1px solid #e2e8f0;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.02); /* Keep subtle box shadow, remove logo shadows */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02); 
             box-sizing: border-box;
+            gap: 15px; /* Added consistent gap instead of margin-right on logo */
         }
         
         .main-logo {
@@ -57,15 +58,16 @@
             object-fit: contain;
             border-radius: 50%;
             flex-shrink: 0;
-            margin-right: 15px;
-            box-shadow: none !important; /* Visual shadow removed */
-            filter: none !important;     /* Ensures no drop-shadows are applied */
+            /* margin-right removed in favor of header gap for cleaner alignment */
+            box-shadow: none !important; 
+            filter: none !important; 
         }
         
         .brand-text {
             display: flex;
             flex-direction: column;
             text-align: left;
+            justify-content: center; /* Ensures the whole block is centered */
         }
         
         .org-name {
@@ -73,7 +75,7 @@
             font-weight: 500;
             color: #000;
             margin: 0;
-            line-height: 1.1;
+            line-height: 1.2; /* Slightly increased for visual balance */
         }
         
         .subsidiary-line {
@@ -81,11 +83,9 @@
             color: #475569;
             margin-top: 4px;
             
-            display: flex !important;      /* Forces flex mode */
-            align-items: center !important; /* Forces vertical center */
-            line-height: 1 !important;      /* Strips away extra font spacing */
-            height: 1.2em;                 /* Locks the height to the text size */
-            
+            display: inline-flex !important;  /* Changed to inline-flex to hug content */
+            align-items: center !important; 
+            line-height: 1 !important; 
             gap: 6px;
             white-space: nowrap;
         }
@@ -96,6 +96,7 @@
             object-fit: contain;
             border-radius: 50%;
             flex-shrink: 0;
+            display: block; /* Removes baseline spacing issues */
         }
         
         .tfi-name {
