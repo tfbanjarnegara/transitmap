@@ -34,7 +34,7 @@ Peta ini meliputi 20 kecamatan di Kabupaten Banjarnegara, mencakup bus medium an
 * **D2:** Pasar Klampok – Gandulekor
 * **D3:** Pasar Klampok – Pasar Pakikiran
 
-#### Angkutan Mikro Bus dalam Kota / *Inner City Microbuses* (Kapasitas/*Capacity*: 12–15)
+#### Angkutan Mikro Bus dalam Kota / *Inner City Microbuses* (Kapasitas/*Capacity*: 15–20)
 **Jam Operasi / *Service Hours*:** ±5.00–18.00
 
 * **E1:** Terminal – Pagentan – Batur
@@ -46,7 +46,7 @@ Peta ini meliputi 20 kecamatan di Kabupaten Banjarnegara, mencakup bus medium an
 **Jam Operasi / *Service Hours*:** 06.00 & 15.00
 * **S:** Dishub – Wanadadi – Rakit – Mandiraja – Bawang
 
-#### Bus Antar Kota Medium / *Medium Intercity Bus* (Kapasitas/*Capacity*: 16–20)
+#### Bus Antar Kota Medium / *Medium Intercity Bus* (Kapasitas/*Capacity*: 22-30)
 **Jam Operasi / Service Hours:** ±05.00–20.00
 * **P:** Purwokerto – Banjarnegara – Wonosobo
 
