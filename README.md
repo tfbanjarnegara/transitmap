@@ -3,7 +3,7 @@
 # Peta Jaringan Angkutan Umum Kabupaten Banjarnegara
 ### *Banjarnegara Public Transportation Network Map*
 
-Peta ini meliputi 20 kecamatan di Kabupaten Banjarnegara, mencakup bus medium antar kota, mikro bus, dan angkot lokal.
+Peta ini meliputi 20 kecamatan di Kabupaten Banjarnegara, mencakup bus medium antarkota, mikrobus, dan angkot lokal.
 *This map covers 20 districts in Banjarnegara Regency, including intercity medium buses, micro-buses, and local angkot services.*
 
 ---
@@ -22,7 +22,7 @@ Peta ini meliputi 20 kecamatan di Kabupaten Banjarnegara, mencakup bus medium an
 * **A8:** Terminal – Masaran
 * **A9:** Terminal – Tunggara
 * **A10:** Terminal – Wanadri
-* **A11:** Terminal – Pandanarum
+* ~~**A11:** Terminal – Pandanarum~~ Tidak Aktif
 * **A13:** Terminal – Wanadadi
 * **A14:** Terminal – Linggasari
 * **A15:** Terminal – Sembawa
